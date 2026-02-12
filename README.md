@@ -1,6 +1,6 @@
-# MoonBit Template
+# mizchi/layout
 
-A minimal MoonBit project template with CI, justfile, and AI coding assistant support.
+Reusable pure layout core extracted from `mizchi/crater`.
 
 ## Usage
 

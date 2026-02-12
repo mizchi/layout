@@ -1,5 +1,5 @@
 import {
-  "mizchi/lib" as @lib,
+  "mizchi/layout" @lib,
   "moonbitlang/async",
 }
 

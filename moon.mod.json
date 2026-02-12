@@ -1,5 +1,5 @@
 {
-  "name": "mizchi/lib",
+  "name": "mizchi/layout",
   "version": "0.1.0",
   "deps": {
     "moonbitlang/async": "0.16.2"
@@ -7,8 +7,8 @@
   "source": "src",
   "preferred-target": "js",
   "readme": "README.mbt.md",
-  "repository": "",
+  "repository": "https://github.com/mizchi/layout",
   "license": "Apache-2.0",
   "keywords": [],
-  "description": ""
+  "description": "Pure reusable layout core extracted from mizchi/crater"
 }

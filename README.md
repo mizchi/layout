@@ -2,63 +2,19 @@
 
 Reusable pure layout core extracted from `mizchi/crater`.
 
-## Usage
+## Packages
 
-Clone this repository and start coding:
+- `mizchi/layout`: Pure alignment/sizing/inset core logic
+- `mizchi/layout/types`: Minimal value types used by the core (`Alignment`, `AlignSelf`, `FlexDirection`, `Rect`, `Dimension`)
 
-```bash
-git clone https://github.com/mizchi/moonbit-template my-project
-cd my-project
-```
-
-Update `moon.mod.json` with your module name:
-
-```json
-{
-  "name": "your-username/your-project",
-  ...
-}
-```
-
-## Quick Commands
+## Commands
 
 ```bash
-just           # check + test
-just fmt       # format code
-just check     # type check
-just test      # run tests
-just test-update  # update snapshot tests
-just run       # run main
-just info      # generate type definition files
+just        # moon check + moon test
+just fmt    # moon fmt
+just test   # moon test
+just info   # moon info
 ```
-
-## Project Structure
-
-```
-my-project/
-├── moon.mod.json      # Module configuration
-├── src/
-│   ├── moon.pkg       # Package configuration
-│   ├── lib.mbt        # Library code
-│   ├── lib_test.mbt   # Tests
-│   ├── lib_bench.mbt  # Benchmarks
-│   ├── API.mbt.md     # Doc tests
-│   └── main/
-│       ├── moon.pkg
-│       └── main.mbt   # Entry point
-├── justfile           # Task runner
-└── .github/workflows/
-    └── ci.yml         # GitHub Actions CI
-```
-
-## Features
-
-- `src/` directory structure with `moon.pkg` format
-- Snapshot testing with `inspect()`
-- Doc tests in `.mbt.md` files
-- Benchmarks with `moon bench`
-- GitHub Actions CI
-- Claude Code / GitHub Copilot support (AGENTS.md)
 
 ## License
 

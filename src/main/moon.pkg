@@ -1,5 +1,6 @@
 import {
   "mizchi/layout" @lib,
+  "mizchi/layout/types" @types,
   "moonbitlang/async",
 }
 

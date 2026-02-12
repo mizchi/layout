@@ -1,30 +1,29 @@
 # API Documentation
 
-This file contains executable doc tests using `mbt test` blocks.
+This file contains executable doc tests using `mbt check` blocks.
 
-## fib
+## compute_justify
 
-Calculate the n-th Fibonacci number.
+Compute `(start_offset, gap_between_items)` for content distribution.
 
 ```mbt check
 ///|
 test {
-  inspect(fib(0), content="1")
-  inspect(fib(1), content="1")
-  inspect(fib(10), content="89")
+  inspect(compute_justify(@types.SpaceBetween, 90.0, 4), content="(0, 30)")
+  inspect(compute_justify(@types.Center, 40.0, 2), content="(20, 0)")
 }
 ```
 
-## sum
+## clamp_size_with_box_min
 
-Sum elements in an array with optional start index and length.
+Clamp width/height by min/max constraints with an absolute box-min lower bound.
 
 ```mbt check
 ///|
 test {
-  let data = [1, 2, 3, 4, 5]
-  inspect(sum(data~), content="15")
-  inspect(sum(data~, start=2), content="12")
-  inspect(sum(data~, length=3), content="6")
+  inspect(
+    clamp_size_with_box_min(5.0, 3.0, 0.0, 100.0, 0.0, 100.0, 12.0, 8.0),
+    content="(12, 8)",
+  )
 }
 ```

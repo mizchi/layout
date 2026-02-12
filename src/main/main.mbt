@@ -1,5 +1,6 @@
 ///|
 async fn main {
   @async.sleep(16)
-  println(@lib.fib(10))
+  let (start, gap) = @lib.compute_justify(@types.SpaceAround, 120.0, 3)
+  println("start=\{start}, gap=\{gap}")
 }

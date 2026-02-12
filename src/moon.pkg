@@ -1,3 +1,4 @@
 import {
+  "mizchi/layout/types",
   "moonbitlang/core/bench",
 }

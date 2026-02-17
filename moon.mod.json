@@ -1,7 +1,9 @@
 {
   "name": "mizchi/layout",
   "version": "0.1.1",
-  "deps": {},
+  "deps": {
+    "mizchi/crater": "0.4.4"
+  },
   "source": "src",
   "preferred-target": "js",
   "readme": "README.mbt.md",
